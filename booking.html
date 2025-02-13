@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Navigation-->
+    <div class="topbar"> <div class="topbartext"> <b>Hours Today:</b> 8:00 AM - 5:00 PM &nbsp;&nbsp;&nbsp;&nbsp; <b>Contact Us:</b> +1 613 948-3912 &nbsp;&nbsp;&nbsp;&nbsp; <b>Location:</b> 75 Laurier Ave E</div>
+    <div class="topnav">
+        <img class="logo" src="./images/logo.png">
+        <a href="index.html">Home</a>
+        <a class="active" href="booking.html">Book Now</a>
+        <a href="services.html">Services</a>
+        <a href="location.html">Location</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="about-us.html">About Us</a>
+      </div> 
+    </div>
+</head>
+<body>
+    <main>
+      <table border="0">
+        <tr>
+            <td>
+              <form id="serviceForm">
+                <h2>Select a Service</h2>
+                          <input type="radio" id="steering" name="service" value="Steering and Alignment Adjustment">
+                          <label for="steering">Steering and Alignment Adjustment</label><br>
+                          <input type="radio" id="climate" name="service" value="Climate Control Repair">
+                          <label for="climate">Climate Control Repair</label><br>
+                          <input type="radio" id="maintenance" name="service" value="Preventative Maintenance">
+                          <label for="maintenance">Preventative Maintenance</label><br>
+                          <input type="radio" id="transmission" name="service" value="Transmission & Engine Repair">
+                          <label for="transmission">Transmission & Engine Repair</label><br>
+                          <input type="radio" id="inspection" name="service" value="Vehicle Inspection">
+                          <label for="inspection">Vehicle Inspection</label><br>
+                          <input type="radio" id="electrical" name="service" value="Electrical Diagnosis & Repair">
+                          <label for="electrical">Electrical Diagnosis & Repair</label><br>
+                <h2>Vehicle Information</h2>
+                          Make: <input type="text"><br>
+                          Model: <input type="text"><br>
+                          Year: <input type="text"><br>
+                          Problem description: <textarea></textarea><br>
+                          Desired appointment time: <input type="datetime-local"><br>
+          
+                <h2>About You</h2>
+                          Name: <input type="text"><br>
+                          Email: <input type="email"><br>
+                          Address: <input type="text"><br>
+                          Phone #: <input type="text"><br>
+
+                          <br><b>Disclaimer:</b> By submitting this form, you agree that the information provided is for preliminary assessment only, and in-person consultation is necessary for an accurate diagnosis and cost estimate. Submitting the form does not guarantee an appointment; our team will contact you to confirm. Your personal information will be used solely for scheduling and conducting the requested services. We strive for quality service but are not liable for unforeseen issues beyond our control. Thank you for choosing our services.<br><br>
+                  <button type="button" onclick="location.href='confirmation.html';">Submit</button>
+              </form>
+            </td>
+            <td>
+			  <iframe src="https://calendar.google.com/calendar/embed?src=94ff0826d2ccc2da6511c8d48731d769281cf5afce70f4b6c829ae2d9e9544bf%40group.calendar.google.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </td>
+        </tr>
+    </table>
+    </main>
+    <footer>
+        <table class="footert">
+            <tr>
+              <td class="tdr">
+                <a href="services.html"><b>Services</b></a>
+                <br>Steering and Alignment Adjustment
+                <br>Climate Control Repair
+                <br>Preventative Maintenance
+                <br>Transmission & Engine Repair
+                <br>Vehicle Inspection
+                <br>Electrical Diagnosis & Repair
+
+              </td>
+              <td class="tdr">
+                <img class="logo" src="./images/logo.png">
+                <br>
+                <br><br><b>Hours Today:</b> 8:00 AM - 5:00 PM
+                <br><b>Contact Us:</b> +1 613 948-3912
+                <br><b>Location:</b> 75 Laurier Ave E
+            </td>
+            <td class="tdr"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.3172205161077!2d-75.6857078233833!3d45.42310637107332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce050a6db98d73%3A0x188a59c3622fdbae!2sUniversity%20of%20Ottawa!5e0!3m2!1sen!2sca!4v1739318842471!5m2!1sen!2sca" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+            </tr>
+          </table> 
+      </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
